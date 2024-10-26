@@ -1,7 +1,6 @@
 const express = require('express');
 const employees = express.Router();
 const db = require('../config/database');
-const e = require('express');
 
 employees.post('/', async (req,res,nex) =>{
     const {name,last_name,phone,email,address} = req.body;
