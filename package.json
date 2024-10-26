@@ -1,0 +1,21 @@
+{
+  "name": "proyectorh",
+  "version": "1.0.0",
+  "description": "API REST PROJECT USING EXPRESS JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "express",
+    "project",
+    "nodejs"
+  ],
+  "author": "Bryan Giovanny Martinez Tinoco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
