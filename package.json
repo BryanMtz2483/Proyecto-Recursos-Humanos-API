@@ -4,7 +4,12 @@
   "description": "API REST PROJECT USING EXPRESS JS",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanMtz2483/Proyecto-Recursos-Humanos-API.git"
   },
   "keywords": [
     "api",
@@ -15,7 +20,14 @@
   ],
   "author": "Bryan Giovanny Martinez Tinoco",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanMtz2483/Proyecto-Recursos-Humanos-API/issues"
+  },
+  "homepage": "https://github.com/BryanMtz2483/Proyecto-Recursos-Humanos-API#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.7"
   }
 }
