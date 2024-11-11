@@ -18,8 +18,7 @@ app.use(morgan('dev'));
 
 app.get('/', index);
 app.use('/user',user);
-app.use(auth);
-app.use("/employees",employees);
+app.use("/employees",auth,employees);
 app.use(notFound);
 
 app.listen(process.env.PORT || 3000, ()=> {
