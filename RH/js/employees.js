@@ -2,6 +2,7 @@ const apiUrl = 'http://localhost:3000/employees';
 
 function getFormData() {
     return {
+        id: document.getElementById('id').value,
         name: document.getElementById('name').value,
         last_name: document.getElementById('last_name').value,
         phone: document.getElementById('phone').value,

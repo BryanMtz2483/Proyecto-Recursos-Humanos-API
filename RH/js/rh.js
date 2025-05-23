@@ -24,8 +24,8 @@ function loadEmployees(){
     })
 }
 function displayEmployees(employees){
-    var body = document.querySelector("body");
+    var empdisplay = document.getElementById("empdisplay");
     for(var i=0; i < employees.length; i++){
-        body.innerHTML += `<h3>${employees[i].name} - ${employees[i].last_name} - ${employees[i].phone} - ${employees[i].email} - ${employees[i].address}</h3>`
+        empdisplay.innerHTML += `<h3>${employees[i].id} - ${employees[i].last_name} - ${employees[i].phone} - ${employees[i].email} - ${employees[i].address}</h3>`
     }
 }

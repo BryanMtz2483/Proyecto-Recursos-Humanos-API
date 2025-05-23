@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human Resources</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/RH/Styles/rh.css">
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="./js/rh.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
 </head>
 <body>
-    <h1>Welcome to Human Resources</h1>
+    <div id="tittle">
+        <h1>Welcome to Human Resources</h1>
+    </div>
     <form id="employeeForm">
         <label for="name">Name:</label>
         <input type="text" id="name" required><br>
@@ -31,13 +34,18 @@
         <button type="button" onclick="updateEmployee()">Update Employee</button>
         <button type="button" onclick="deleteEmployee()">Delete Employee</button>
     </form>
-<br> <br>
-    <label for="employeeId">Employee ID (for update/delete):</label>
-    <input type="text" id="employeeId"><br><br>
+    <div id="empid">
+        <label for="employeeId">Employee ID (for update/delete):</label>
+        <input type="text" id="employeeId">
+    </div>
+    <div id="result">
+        <h1>Result of the query</h1>
+    </div>
+    <div id="empdisplay">    
+        <h1>EMPLOYEES</h1> <br>
+        <script src="./js/employees.js"></script>
+    </div>
 
-    <div id="result"></div>
-    <script src="./js/employees.js"></script>
-    <br><br>
-    <h1>EMPLOYEES</h1> <br>
+
 </body>
 </html>
