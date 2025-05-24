@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 11-11-2024 a las 02:16:25
+-- Tiempo de generación: 24-05-2025 a las 00:02:27
 -- Versión del servidor: 8.0.40
--- Versión de PHP: 8.3.12
+-- Versión de PHP: 8.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,8 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `name`, `last_name`, `phone`, `email`, `address`) VALUES
-(1, 'Bryan', 'Martinez Tinoco', 4425244760, 'mhzb3072@gmail.com', 'Queretaro 2000');
+(1, 'Bryan Giovanny', 'Martinez Tinoco', 4425244760, 'mhzb3072@gmail.com', 'Queretaro 2000'),
+(2, 'Eduardo', 'Rios Aguero', 4425244763, 'era2003@gmail.com', 'Vicente Guerrero 2004');
 
 -- --------------------------------------------------------
 
@@ -62,10 +63,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `user_name`, `user_mail`, `user_password`) VALUES
 (1, 'Bryan2483', 'mhzb3072@gmail.com', '12345678'),
-(2, 'Bryan Giovanny 2', 'bgmt@gmail.com', '12345678'),
-(4, 'Bryan24832', 'mdndnfd', '12345678'),
-(5, 'Bryan Giovanny 3', 'bgmt@gmail.comm', '12345678'),
-(6, 'era', 'era@suputamadre.com', '12345678');
+(6, 'ERA', 'era2003@gmail.com', '12345678');
 
 --
 -- Índices para tablas volcadas
@@ -76,8 +74,8 @@ INSERT INTO `users` (`id`, `user_name`, `user_mail`, `user_password`) VALUES
 --
 ALTER TABLE `employees`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `phone` (`phone`);
+  ADD UNIQUE KEY `phone` (`phone`),
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- Indices de la tabla `users`
@@ -95,7 +93,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
